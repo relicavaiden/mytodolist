@@ -41,7 +41,7 @@ function App() {
   const resetTask = (id) => {
     setTodoList(todoList.map((task) => {
       if (task.id === id) {
-        return { ...task, reset: true };
+        return { ...task, completed: false };
       } else {
         return task;
       }
